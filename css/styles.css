@@ -130,6 +130,7 @@ body {
 .header {
   padding-top: 31px;
   padding-bottom: 31px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-logo {
@@ -185,7 +186,7 @@ body {
   margin-left: auto;
 }
 
-.navition-item:not(:last-child) {
+.navigation-item:not(:last-child) {
   margin-right: 50px;
 }
 .header-item:first-child {
@@ -208,8 +209,8 @@ body {
   text-transform: uppercase;
   color: var(--second-title-color);
   max-width: 692px;
-  margin-bottom: 30px;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 .hero-btn-order {
@@ -271,6 +272,7 @@ body {
 /* -----------------------------------------------------Секція Чим ми займаємось-------------------------------------------------------------- */
 
 .work-title {
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -300,6 +302,7 @@ body {
 }
 
 .team-title {
+  text-align: center;
   margin-bottom: 50px;
 }
 .team-item > img {
@@ -335,10 +338,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/* .address-link-mail,
-.address-text{
-  margin-bottom: 9px;
-} */
 
 .address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -393,24 +392,30 @@ body {
   background-color: var(--accent-color);
 }
 
+.hero-list {
+  display: flex;
+  justify-content: center;
+}
+
 .product-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
+  margin-bottom: 4px;
 }
 
+.product-img {
+  margin-bottom: 20px;
+}
 .product-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--product-text-color);
+  margin-bottom: 20px;
 }
 
-.hero-list {
-  display: flex;
-  justify-content: center;
-}
 .hero-item:not(:last-child) {
   margin-right: 8px;
   margin-bottom: 34px;
@@ -419,10 +424,34 @@ body {
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  /* margin-left: -30px; */
   margin-bottom: 94px;
 }
-.product-item {
+/* .product-item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
+} */
+
+.hero-portfolio {
+  margin-top: 94px;
+  margin: 94px;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+}
+
+.product-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.product-item {
+  width: 370px;
+  border: 1px solid #eeeeee;
+  width: 370px;
+  height: 404px;
+}
+
+.product-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
