@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -17,10 +24,10 @@
     <header class="header">
       <!--Навігація сайту-->
       <div class="container">
+        <nav class="header-navigation">
           <a href="./index.html" class="header-logo link"
             ><span class="header-logo-web">Web</span>Studio</a
           >
-          <nav class="header-navigation"></nav>
           <ul class="navigation-list list">
             <li class="navigation-item">
               <a href="./index.html" class="navigation-link link nav">Студия</a>
@@ -49,9 +56,9 @@
         </ul>
       </div>
     </header>
-  
+
     <main>
-      <section class="hero-portfolio">
+      <section class="section hero-portfolio">
         <div class="container">
           <h1 class="visually-hidden">Примеры робот</h1>
           <ul class="hero-list list">
@@ -82,8 +89,10 @@
                   height="294"
                   class="product-img"
                 />
-                <h2 class="product-title">Технокряк</h2>
-                <p class="product-text">Веб-сайт</p>
+                <div class="div-product-item">
+                  <h2 class="product-title">Технокряк</h2>
+                  <p class="product-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="product-item">
@@ -95,8 +104,12 @@
                   height="294"
                   class="product-img"
                 />
-                <h2 class="product-title">Постер New Orlean vs Golden Star</h2>
-                <p class="product-text">Дизайн</p>
+                <div class="div-product-item">
+                  <h2 class="product-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="product-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="product-item">
@@ -108,8 +121,10 @@
                   height="294"
                   class="product-img"
                 />
-                <h2 class="product-title">Ресторан Seafood</h2>
-                <p class="product-text">Приложение</p>
+                <div class="div-product-item">
+                  <h2 class="product-title">Ресторан Seafood</h2>
+                  <p class="product-text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="product-item">
@@ -121,8 +136,10 @@
                   height="294"
                   class="product-img"
                 />
-                <h2 class="product-title">Проект Prime</h2>
-                <p class="product-text">Маркетинг</p>
+                <div class="div-product-item">
+                  <h2 class="product-title">Проект Prime</h2>
+                  <p class="product-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="product-item">
@@ -134,8 +151,10 @@
                   height="294"
                   class="product-img"
                 />
-                <h2 class="product-title">Проект Boxes</h2>
-                <p class="product-text">Приложение</p>
+                <div class="div-product-item">
+                  <h2 class="product-title">Проект Boxes</h2>
+                  <p class="product-text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="product-item">
@@ -147,10 +166,12 @@
                   height="294"
                   class="product-img"
                 />
-                <h2 lang="an" class="product-title">
-                  Inspiration has no Borders
-                </h2>
-                <p class="product-text">Веб-сайт</p>
+                <div class="div-product-item">
+                  <h2 lang="an" class="product-title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="product-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="product-item">
@@ -162,8 +183,10 @@
                   height="294"
                   class="product-img"
                 />
-                <h2 class="product-title">Издание Limited Edition</h2>
-                <p class="product-text">Дизайн</p>
+                <div class="div-product-item">
+                  <h2 class="product-title">Издание Limited Edition</h2>
+                  <p class="product-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="product-item">
@@ -175,8 +198,10 @@
                   height="294"
                   class="product-img"
                 />
-                <h2 class="product-title">Проект LAB</h2>
-                <p class="product-text">Маркетинг</p>
+                <div class="div-product-item">
+                  <h2 class="product-title">Проект LAB</h2>
+                  <p class="product-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="product-item">
@@ -188,8 +213,10 @@
                   height="294"
                   class="product-img"
                 />
-                <h2 lang="an" class="product-title">Growing Business</h2>
-                <p class="product-text">Приложение</p>
+                <div class="div-product-item">
+                  <h2 lang="an" class="product-title">Growing Business</h2>
+                  <p class="product-text">Приложение</p>
+                </div>
               </a>
             </li>
           </ul>

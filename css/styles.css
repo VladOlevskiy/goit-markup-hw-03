@@ -34,6 +34,8 @@ ol {
 }
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 button {
@@ -58,6 +60,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .link {
@@ -135,7 +141,6 @@ body {
 
 .header-logo {
   margin-right: 93px;
-  margin-left: 215px;
 
   font-family: 'Raleway', Tahoma, sans-serif;
   font-weight: 700;
@@ -149,13 +154,6 @@ body {
 .footer-logo-web {
   color: var(--accent-color);
 }
-
-/* .header-logo:focus,
-.header-logo:hover,
-.footer-logo:focus,
-.footer-logo:hover {
-  color: var(--accent-color);
-} */
 
 .navigation-link:hover,
 .navigation-link:focus {
@@ -174,6 +172,7 @@ body {
 
 .navigation-list {
   display: flex;
+  align-items: center;
 }
 
 .header .container {
@@ -192,8 +191,19 @@ body {
 .header-item:first-child {
   margin-right: 50px;
 }
+
+.navigation-link,
+.header-link-mail,
+.header-link-tel {
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+.header-navigation {
+  display: flex;
+}
+
 /* -------------------------------------------------Секція Hero Студія---------------------------------------------------------------------- */
-.hero {
+.section.hero {
   background-color: var(--background-section);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -238,10 +248,6 @@ body {
   background-color: var(--main-title-color);
 }
 /* -------------------------------------------------------Секція Наші переваги-------------------------------------------------------------- */
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .features-title {
   font-family: inherit;
@@ -249,6 +255,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-title-color);
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -270,14 +277,14 @@ body {
 }
 
 /* -----------------------------------------------------Секція Чим ми займаємось-------------------------------------------------------------- */
+.work.section {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
 
 .work-title {
   text-align: center;
   margin-bottom: 50px;
-}
-
-.work-item:last-child {
-  margin-bottom: 94px;
 }
 
 .work-list {
@@ -297,6 +304,13 @@ body {
 .team-list {
   display: flex;
 }
+.team-item {
+  background-color: var(--background-body);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -324,6 +338,7 @@ body {
 }
 
 .team-list-text {
+  margin-bottom: 30px;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.19;
@@ -395,6 +410,7 @@ body {
 .hero-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .product-title {
@@ -405,36 +421,20 @@ body {
   margin-bottom: 4px;
 }
 
-.product-img {
-  margin-bottom: 20px;
-}
 .product-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--product-text-color);
-  margin-bottom: 20px;
 }
 
 .hero-item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 34px;
 }
 
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  /* margin-left: -30px; */
-  margin-bottom: 94px;
-}
-/* .product-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-} */
-
-.hero-portfolio {
-  margin-top: 94px;
-  margin: 94px;
 }
 
 .hero-title {
@@ -447,11 +447,14 @@ body {
 
 .product-item {
   width: 370px;
-  border: 1px solid #eeeeee;
-  width: 370px;
-  height: 404px;
 }
 
 .product-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
+}
+.div-product-item {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
