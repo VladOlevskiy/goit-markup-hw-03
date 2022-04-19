@@ -134,8 +134,8 @@ body {
 
 /* ---------------------------------------------------------Футер--------------------------------------------------------------------------- */
 .header {
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -267,8 +267,6 @@ body {
   display: flex;
 }
 .features-item {
-  display: flex;
-  flex-wrap: wrap;
   width: 270px;
 }
 
